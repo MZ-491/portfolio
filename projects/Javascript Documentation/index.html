@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Documentation</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+   
+    <section class="first">
+        <div class="slider">
+            <h1>Javascript Documentation</h1>
+            <a href="#introduction"><p>Introduction</p></a>
+            <a href="#already"><p>What you already know</p></a>
+            <a href="#java"><p>Javascript and Java</p></a>
+            <a href="#helloworld"><p>Hello World</p></a>
+            <a href="#variables"><p>Variables</p></a>
+        </div>
+
+        <div class="documentation">
+            <div id="introduction">
+                <h2>Introduction</h2>
+                <p>JavaScript (JS) is a versatile, lightweight, and widely-used programming language primarily used for web development. It was initially designed to add interactivity to websites but has evolved significantly and now plays a key role in various environments, from client-side to server-side applications.</p><br>
+                <p>The main purpose of JavaScript (JS) is to add interactivity, dynamic content, and control behavior on web pages. It is a versatile, client-side programming language that allows developers to create rich, user-friendly experiences on websites.</p><br>
+                <ul>
+                    <li>It allows dynamic changes to the structure and content of web pages, such as modifying HTML elements, styles, and attributes in real-time.</li><br>
+                    <li>JavaScript can respond to user actions such as clicks, form submissions, mouse movements, and keyboard inputs, enabling interactive features like dropdowns, modals, and dynamic form validation.</li><br>
+                    <li>JavaScript enables asynchronous operations, such as fetching data from a server using AJAX or Fetch API without reloading the page (enabling smooth web applications like Google Maps or social media feeds).</li><br>
+                </ul>
+            </div>
+
+            <div id="already">
+                <h2>What you already know</h2>
+                <p>The guide assume you have the following basic background</p><br>
+                <ul>
+                    <li>A general understanding of the internet and world wide web(WWW)</li><br>
+                    <li>Good working knowledge of Hyper Text Markup Language(HTNL)</li><br>
+                    <li>Some programming experience if you are new to programming try one of the tutorials on the main page about javascript</li><br>
+                </ul>
+            </div>
+
+            <div id="java">
+                <h2>Javascript and Java</h2>
+                <p>Java and JavaScript share several similarities despite their different purposes. Both have C-like syntax, support object-oriented programming (with Java being class-based and JavaScript being prototype-based), and feature platform independence—Java via the JVM and JavaScript via web browsers. They both use automatic memory management through garbage collection and have large ecosystems of libraries and frameworks for development. Additionally, both languages support concurrency (Java through multithreading and JavaScript through asynchronous programming) and are widely used for cross-platform development across different environments.</p><br>
+
+                <p>Java and JavaScript differ primarily in purpose and execution. Java is a class-based, strongly-typed language used for building large-scale, platform-independent applications on the JVM, while JavaScript is a loosely-typed, lightweight scripting language mainly for web interactivity, running in browsers. Java supports multithreading for concurrency, whereas JavaScript uses a single-threaded, event-driven model with asynchronous operations. Additionally, Java requires compilation, whereas JavaScript is interpreted directly by the browser.</p><br>
+
+                <p>Java is primarily used for building large, scalable applications, including enterprise systems, Android apps, and server-side applications, due to its strong typing, security, and cross-platform capability via the JVM. JavaScript, on the other hand, is designed for adding interactivity and dynamic content to web pages, enhancing user experiences in browsers, and is increasingly used for full-stack web development with frameworks like Node.js.</p>
+            </div>
+
+            <div id="helloworld">
+                <h2>Hello World</h2>
+                <p>Here's a simple "Hello, World!" program in JavaScript:</p><br>
+                <p class="para">console.log("Hello, World!");</p><br>
+                <p>This code uses the console.log() function to print "Hello, World!" to the browser's console or the terminal if running in Node.js.</p>
+            </div>
+
+            <div id="variables">
+                <h2>Variables</h2>
+                <p>In JavaScript, variables are used to store and manipulate data, and can be declared using var, let, or const. The var keyword creates variables that are function-scoped and can be re-declared or updated, but it's generally considered outdated due to potential scoping issues. The let keyword introduces block-scoped variables that can be updated but not re-declared within the same scope, offering more control. const is used for declaring block-scoped variables that are constants, meaning they cannot be reassigned after their initial value is set. Choosing between let and const is common in modern JavaScript to improve code clarity and prevent accidental reassignment.</p><br>
+                <p>When declaring variables in JavaScript, there are several important rules to follow:</p><br>
+                <ul>
+                    <li>Variable names can contain letters, digits, underscores (_), and dollar signs ($).</li><br>
+                    <li>Variable names must begin with a letter, an underscore (_), or a dollar sign ($), but cannot start with a digit.</li><br>
+                    <li>Names are case-sensitive (myVar and myvar are different).</li><br>
+                    <li>Reserved keywords (like let, var, class, function, etc.) cannot be used as variable names.</li><br>
+                </ul>
+            </div>
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,75 @@
+body{
+    background-color: #DFF5FF;
+    border: 10px solid #00224D;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    margin-left: 250px;
+    margin-top: 100px;
+    margin-right: 250px;
+    display: flex;
+    justify-content: space-between;
+}
+.first h1{
+    font-size: 50px;
+    color: #00224D;
+}
+.container{
+    align-content: flex-end;
+}
+.first h4{
+    text-align: end;
+    font-size: 25px;
+}
+.img{
+    border-radius: 50%;
+}
+.second{
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+.second h1{
+    margin-bottom: 10px;
+    font-size: 50px;
+}
+.second p{
+    line-height: 30px;
+    letter-spacing: 1.5px;
+    text-align: justify;
+    font-size: 18px;
+}
+.thrid{
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+.thrid h1{
+    margin-bottom: 10px;
+    font-size: 40px;
+}
+.thrid p{
+    line-height: 30px;
+    text-align: justify;
+    letter-spacing: 0.5px;
+    font-size: 18px;
+}
+.fourth{
+    margin-left: 250px;
+    margin-top: 50px;
+    margin-right: 250px;
+}
+ul{
+    margin-left: 50px;
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+footer{
+    margin-top: 50px;
+    text-align: end;
+    margin-bottom: 50px;
+}

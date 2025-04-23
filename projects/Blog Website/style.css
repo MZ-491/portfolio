@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    margin: 0 150px;
+    font-family: "Roboto", system-ui;
+}
+nav{
+    display: flex;
+    background-color: white;
+    gap: 800px;
+    padding: 15px 0;
+    border-bottom: 2px solid whitesmoke;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+.navbar{
+    display: flex;
+    gap: 30px;
+}
+.navbar a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+nav h2{
+    font-weight: bold;
+}
+.first{
+    display: flex;
+    margin: 50px 200px;
+}
+.text{
+    align-content: center;
+}
+.text h1{
+    font-size: 60px;
+}
+.img{
+    border-radius: 50px;
+}
+.second{
+    margin-top: 100px;
+    display: flex;
+    gap: 50px;
+    border: 2px solid whitesmoke;
+}
+.text1{
+    align-content: center;
+    padding-left: 50px;
+}
+.date{
+    display: flex;
+    gap: 600px;
+}
+.date a{
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+.thrid{
+    margin: 50px 0;
+}
+.grid-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 150px;
+}
+.card{
+    width: 300px;
+    border: 2px solid whitesmoke;
+}
+.date1{
+    display: flex;
+    gap: 50px;
+}
+.date1 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+.img1{
+    border-radius: 10px;
+}
+.text2{
+    margin-top: 15px;
+    padding: 15px;
+}
+.fourth{
+    display: flex;
+    margin-bottom: 50px;
+    border: 2px solid whitesmoke;
+}
+.text3{
+    align-content: center;
+    padding: 50px;
+}
+.text3 h1{
+    font-size: 30px;
+    font-weight: bold;
+}
+.date2{
+    display: flex;
+    gap: 500px;
+}
+.date2 a{
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+footer{
+    display: flex;
+    gap: 650px;
+    border-top: 2px solid whitesmoke;
+    padding: 15px 15px 15px 50px;
+}
+.logo{
+    display: flex;
+    gap: 50px;
+}
+
+
+/* Media queries for smaller screens */
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    body {
+        margin: 0;
+    }
+
+    .first {
+        margin: 20px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text h1 {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .second {
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text1 {
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .date, .date2 {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .first {
+        margin: 10px auto;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .text h1 {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .second {
+        margin-top: 10px;
+        padding: 0;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .date1 {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .grid-container {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    .text1, .text2, .text3 {
+        text-align: center;
+    }
+}

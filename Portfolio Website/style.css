@@ -1,0 +1,285 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "Roboto", system-ui;
+}
+nav{
+    background-color: #3FA2F6;
+    color: white;
+    padding: 15px 100px 15px 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 900px;
+    position: sticky;
+    z-index: 1000;
+    top: 0;
+}
+.navbar{
+    display: flex;
+    gap: 50px;
+}
+.navbar a{
+    text-decoration: none;
+    font-size: 20px;
+    color: white;
+}
+.mypic{
+    border-radius: 150px;
+}
+#home{
+    display: flex;
+    background-color: #071952;
+    height: 675px;
+    padding: 118px 250px;
+    border-bottom: 10px solid #3FA2F6;
+}
+.text{
+    padding: 150px 0 0 150px;
+    color: white;
+}
+.hi{
+    font-size: 40px;
+    color: yellow;
+}
+.name{
+    font-size: 40px;
+}
+.text h2{
+    font-size: 47px;
+    overflow: hidden;
+    border-right: 0.15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    animation: typing 5s steps(40,end), blink-caret 0.75s step-end infinite;
+}
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+@keyframes blink-caret{
+    from,to{
+        border-color: transparent;
+    }
+    50%{
+        border-color: orange;
+    }
+}
+#projects{
+    background-color: #071952;
+    min-height: 1100px;
+    padding: 25px 105px;
+}
+#projects h1{
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 50px 0;
+}
+.project1{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+.project4{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.project7{
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    margin-top: 50px;
+}
+.card {
+    width: 400px;
+    overflow: hidden;
+    height: 250px;
+    border-radius: 15px;
+    transition: 0.2s ease-in-out;
+  }
+  .card a{
+    text-decoration: none;
+    color: black;
+  }
+  .card:hover {
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+  }
+  .card:hover img {
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8;
+  }
+  .card:hover .card-content {
+    background: white;
+    color: var(--dark-color);
+    transform: translateY(0px);
+  }
+  
+  .card-content {
+    padding: 10px;
+    position: relative;
+    top: -3rem;
+    margin-bottom: -3.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+    text-align: center;
+  }
+  
+.contacts{
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+    padding: 25px 0 0 360px;
+}
+.contacts1{
+    display: flex;
+    gap: 50px;
+    font-size: 30px;
+    padding: 25px 0 0 510px;
+}
+.contact{
+    display: flex;
+}
+#contacts{
+    background-color: #161D6F;
+    color: white;
+    text-align: center;
+    height: 500px;
+    padding-top: 150px;
+}
+#contacts h1{
+    font-size: 50px;
+}
+
+@media (max-width: 768px){
+    nav{
+        flex-direction: column;
+        display: flex;
+        gap: 10px;
+        text-align: center;
+        font-size: 80%;
+        padding: 5px;
+    }
+    .navbar{
+        flex-direction: column;
+        gap: 5px;
+    }
+    .navbar a{
+        font-size: 15px;
+    }
+    #home{
+        padding: 25px;
+        flex-direction: column;
+        height: auto
+    }
+    .text{
+        padding: 0 20px;
+        text-align: center;
+    }
+    .hi{
+        font-size: 18px;
+    }
+    .name{
+        font-size: 18px;
+    }
+    .text h2{
+        font-size: 25px;
+    }
+    .mypic{
+        border-radius: 100px;
+        width: 80%;
+        height: 300px;
+        margin-left: 50px;
+    }
+    #projects{
+        height: auto;
+        padding: 20px 25px;
+    }
+    #projects h1{
+        font-size: 22px;
+        text-align: center;
+        padding: 20px 25px;
+    }
+    .project1{
+        flex-direction: column;
+        gap: 10px;
+    }
+    .project4{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    .project7{
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 10px;
+    }
+    img{
+        width: 100%;
+        height: auto;
+    }
+    .contacts, .contacts1{
+        flex-direction: column;
+        gap: 10px;
+        font-size: 15px;
+        padding: 0 25px;
+    }
+    .contact{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        padding-bottom: 15px;
+    }
+    #contacts{
+        text-align: center;
+        height: auto;
+        padding-top: 0 25px;
+    }
+    #contacts h1{
+        font-size: 20px;
+        padding-bottom: 15px;
+    }
+    .card {
+        width: 100%;
+        height: auto;
+        margin-bottom: 15px;
+      }
+      
+      .card-content {
+        padding: 2px;
+        top: -1rem;
+        text-align: center;
+        border-radius: 2px;
+      }
+
+      .card-content h3{
+        font-size: 15px;
+      }
+}
+
+@media (max-width: 450px){
+    .mypic{
+        border-radius: 75px;
+        width: 100%;
+        height: 200px;
+        margin: 0;
+    }
+    #home{
+        height: 315px;
+    }
+}
+@media (min-width: 650px){
+    .mypic{
+        margin-left: 75px;
+    }
+}

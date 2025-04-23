@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Job Application Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="card">
+        <h1>Job Application (Web)</h1>
+
+        <div class="first">
+            <div>
+            <label for="name">First Name</label><br>
+            <input type="text" placeholder="Enter First Name....">
+            </div>
+
+            <div>
+            <label for="name">Last Name</label><br>
+            <input type="text" placeholder="Enter Last Name....">
+            </div>
+            
+        </div>
+
+        <div class="second">
+            <div>
+            <label for="e-mail">Email</label><br>
+            <input type="email" placeholder="Enter Email....">
+            </div>
+
+            <div>
+            <label for="name">Job Role</label><br>
+            <select name="Job Role" id="Job Rule">
+                <option value="first">Backend Developer</option>
+                <option value="second">Fronted Developer</option>
+                <option value="third">Android Developer</option>
+                <option value="fourth">Full Stack Developer</option>
+                <option value="fifth">Java Developer</option>
+            </select>
+        </div>
+        </div>
+        
+        <div class="thrid">
+        <label for="Address">Enter Address</label><br>
+        <textarea name="Address" id="Address"></textarea>
+    </div>
+
+    <div class="fourth">
+        <div>
+        <label for="name">City</label><br>
+        <input type="text" placeholder="Enter City....">
+        </div>
+
+        <div>
+        <label for="name">Pincode</label><br>
+        <input type="text" maxlength="10" placeholder="Enter Pincode....">
+        </div>
+        
+    </div>
+
+    <div class="fifth">
+        <div>
+        <label for="date">Start Date</label><br>
+        <input type="date" placeholder="30/12/2021">
+        </div>
+
+        <div>
+            <form action="/upload" method="post" enctype="multipart/form-data">
+                <label for="cv">Upload your CV</label><br>
+                <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+            </form>
+        </div>
+        
+    </div>
+
+    <button>Apply Button</button>
+
+
+    </div>
+</body>
+</html>

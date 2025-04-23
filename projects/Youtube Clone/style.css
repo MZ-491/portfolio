@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.first{
+    margin: 15px;
+    display: flex;
+}
+.youtube{
+    display: flex;
+    margin-left: 100px;
+}
+.text{
+    margin-left: 300px;
+}
+.music{
+    margin-left: 25px;
+}
+.account{
+    margin-left: 270px;
+    display: flex;
+    gap: 10px;
+}
+input[type="text"]{
+    height: 30px;
+    width: 450px;
+}
+.svg{
+    background-color: gray;
+    height: 30px;
+    width: 50px;
+    padding: 4px 0 0 14px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+.second{
+    margin: 15px;
+    display: flex;
+    gap: 50px;
+
+}
+.card{
+    border: 2px solid whitesmoke;
+    width: 1360px;
+}
+.btn{
+    margin-top: 10px;
+}
+button{
+    padding: 5px;
+    border-radius: 13px;
+    margin-right: 5px;
+    transition: 0.2s ease-in;
+}
+button:hover{
+    color: white;
+    background-color: black;
+    transition: 0.2s ease-in;
+}
+.videos{
+    width: 1360px;
+    background-color: grey;
+    margin-top: 10px;
+}
+.javascript{
+    padding: 15px 15px 0 45px;
+}
+.news{
+    padding: 15px 15px 0 45px;
+}
+.songs{
+    padding: 15px 15px 15px 45px;
+}
